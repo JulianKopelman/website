@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Julian Kopelman — Student" />
+    <title>Julian Kopelman</title>
+    <style>
+      :root {
+        font-family: "MS Sans Serif", Tahoma, Geneva, sans-serif;
+        color: #111;
+        background: #008080;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 1.5rem;
+        background-color: #008080;
+        background-image: radial-gradient(rgba(255,255,255,.13) .7px, transparent .7px);
+        background-size: 4px 4px;
+      }
+
+      .window {
+        width: min(100%, 540px);
+        padding: 3px;
+        background: #c0c0c0;
+        box-shadow: -2px -2px 0 #fff, 2px 2px 0 #000, 4px 4px 0 #777;
+      }
+
+      .title-bar {
+        display: flex;
+        align-items: center;
+        min-height: 29px;
+        padding: 4px 5px;
+        color: #fff;
+        background: #000080;
+        font-size: .85rem;
+        font-weight: bold;
+      }
+
+      .title-bar::before {
+        content: "⌘";
+        display: grid;
+        width: 17px;
+        height: 17px;
+        place-items: center;
+        margin-right: 5px;
+        color: #000080;
+        background: #fff;
+        font-size: .8rem;
+      }
+
+      .title-bar span { margin-left: auto; }
+
+      .close {
+        display: grid;
+        width: 19px;
+        height: 19px;
+        place-items: center;
+        margin-left: 7px;
+        color: #000;
+        background: #c0c0c0;
+        box-shadow: inset 1px 1px #fff, inset -1px -1px #555;
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+      }
+
+      main {
+        padding: clamp(2.75rem, 10vw, 4rem) 2rem;
+        text-align: center;
+        background: #c0c0c0;
+      }
+
+      .icon {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        margin: 0 auto 1.25rem;
+        border: 1px solid #000080;
+        color: #fff;
+        background: #1682b8;
+        box-shadow: inset 2px 2px #62c8f3, inset -2px -2px #07567e;
+        font-size: 1.6rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(2rem, 8vw, 3.25rem);
+        font-weight: normal;
+      }
+
+      p {
+        margin: .65rem 0 2rem;
+        color: #444;
+        font-size: 1rem;
+      }
+
+      a {
+        display: inline-block;
+        min-width: 132px;
+        padding: .62rem 1.1rem;
+        border: 0;
+        color: #fff;
+        background: #000080;
+        box-shadow: inset 2px 2px #3d68b8, inset -2px -2px #00003e, 2px 2px 0 #555;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover { background: #0000a8; }
+      a:active { box-shadow: inset 2px 2px #00003e, inset -2px -2px #3d68b8; transform: translate(2px, 2px); }
+      a:focus-visible { outline: 2px dotted #000; outline-offset: 4px; }
+
+      .status-bar {
+        margin: 0 3px 3px;
+        padding: 4px 6px;
+        border: 1px solid;
+        border-color: #777 #fff #fff #777;
+        color: #444;
+        font-size: .72rem;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="window" aria-label="Julian Kopelman profile">
+      <header class="title-bar">Julian Kopelman <span aria-hidden="true" class="close">×</span></header>
+      <main>
+        <div class="icon" aria-hidden="true">JK</div>
+        <h1>Julian Kopelman</h1>
+        <p>Student</p>
+        <!-- Put your PDF in this folder as resume.pdf, or change the href below. -->
+        <a href="assets/resume.pdf">Resume</a>
+      </main>
+      <footer class="status-bar">Ready</footer>
+    </section>
+  </body>
+</html>
